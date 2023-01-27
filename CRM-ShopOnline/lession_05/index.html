@@ -12,24 +12,31 @@
       <fieldset>
         <h2>Добавить товар</h2>
         <fieldset>
-          <label for="name">Наименование <input type="text" name="name" id="name"></label>
+          <label for="name">Наименование </label>
+          <input type="text" name="name" id="name" required>
           <br>
-          <label for="category">Категория <input type="text" name="category" id="category"></label>
+          <label for="category">Категория </label>
+          <input type="text" name="category" id="category" required>
           <br>
-          <label for="units">Единицы измерения <input type="text" name="units" id="units"></label>
+          <label for="units">Единицы измерения </label>
+          <input type="text" name="units" id="units" required>
           <br>
-          <label>Дисконт <input type="checkbox"></label>
-          <input type="text" name="discount" id="discount" disabled>
+          <label for="discount">Дисконт </label>
+          <div>
+            <input type="checkbox" aria-label="Добавить скидку">
+            <input type="text" name="discount" id="discount" disabled>
+          </div>
           <br>
-          <label for="description">Описание 
-            <textarea name="description" id="description" cols="30" rows="5"></textarea>
-          </label>
+          <label for="description">Описание </label>
+          <textarea name="description" id="description" cols="30" rows="5" required></textarea>
           <br>
-          <label for="count">Количество <input type="number" name="count" id="count"></label>
+          <label for="count">Количество </label>
+          <input type="number" name="count" id="count" required>
           <br>
-          <label for="price">Цена <input type="number" name="price" id="price"></label>
+          <label for="price">Цена </label>
+          <input type="number" name="price" id="price" required>
           <br>
-          <input type="file" name="image" accept="image/jpeg,imaje/png">
+          <input type="file" name="image" accept="image/jpeg,imaje/png" required>
 
         </fieldset>
         <button type="submit" formtarget="_blank">Добавить товар</button>
