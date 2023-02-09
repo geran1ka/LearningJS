@@ -15,38 +15,39 @@
       <div class="container">
         <h2 class="modal__title">Добавить товар</h2>
         <form class="form-product" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <fieldset>
+            <label class="form-product__label" for="name">Наименование </label>
+            <input class="form-product__input" type="text" name="name" id="name" required>
 
-              <label class="form-product__label" for="name">Наименование </label>
-              <input class="form-product__input" type="text" name="name" id="name" required>
-  
-              <label class="form-product__label" for="category">Категория </label>
-              <input class="form-product__input" type="text" name="category" id="category" required>
-  
-              <label class="form-product__label" for="units">Единицы измерения </label>
-              <input class="form-product__input" type="text" name="units" id="units" required>
-              
-              <label class="form-product__label" for="discount">Дисконт </label>
-              <div class="container__discount">
-                <input class="form-product__checkbox" type="checkbox" aria-label="Добавить скидку">
-                <input class="form-product__input1" type="text" name="discount" id="discount" disabled>
-              </div>
-  
-              <label class="form-product__label" for="description">Описание </label>
-              <textarea class="form-product__description" name="description" id="description" cols="30" rows="5" required></textarea>
-  
-              <label class="form-product__label" for="count">Количество </label>
-              <input class="form-product__input" type="number" name="count" id="count" required>
-  
-              <label class="form-product__label" for="price">Цена </label>
-              <input class="form-product__input" type="number" name="price" id="price" required>
-  <!--
-              <input class="form-product__input" type="file" name="image" accept="image/jpeg,imaje/png" required>
-  
-            <button class="form-product__btn" type="submit" formtarget="_blank">Добавить товар</button>
-          -->
+            <label class="form-product__label" for="category">Категория </label>
+            <input class="form-product__input" type="text" name="category" id="category" required>
+
+            <label class="form-product__label" for="units">Единицы измерения </label>
+            <input class="form-product__input" type="text" name="units" id="units" required>
+            
+            <label class="form-product__label" for="discount">Дисконт </label>
+            <div class="container__discount">
+              <input class="form-product__checkbox" type="checkbox" aria-label="Добавить скидку">
+              <input class="form-product__input1" type="text" name="discount" id="discount" disabled>
+            </div>
+
+            <label class="form-product__label" for="description">Описание </label>
+            <textarea class="form-product__description" name="description" id="description" cols="30" rows="5" required></textarea>
+
+            <label class="form-product__label" for="count">Количество </label>
+            <input class="form-product__input" type="number" name="count" id="count" required>
+
+            <label class="form-product__label" for="price">Цена </label>
+            <input class="form-product__input" type="number" name="price" id="price" required>
+<!--
+            <input class="form-product__input" type="file" name="image" accept="image/jpeg,imaje/png" required>
+
+          <button class="form-product__btn" type="submit" formtarget="_blank">Добавить товар</button>
+        -->
+        </fieldset>
 
         </form>
-        </div>
+      </div>
     </div>
 
   </body>
