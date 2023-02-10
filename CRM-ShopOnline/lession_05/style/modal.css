@@ -80,12 +80,6 @@
   display: inline-block;
 }
 
-.form-product__input1 {
-  display: inline-block;
-  max-width: 100%;
-  height: 40px;
-}
-
 .form-product__btn {
   width: 200px;
   height: 39px;
