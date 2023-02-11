@@ -1,6 +1,6 @@
 .modal {
   max-width: 792px;
-  margin: 0 auto;
+  margin: 50px auto;
   background-color: #f2f0f9;
 }
 
@@ -44,7 +44,7 @@
 
 .form-product__box {
   margin-bottom: 32px;
-  padding: 0 28px;
+  padding: 28px 28px;
   border: none;
   border-radius: 8px;
   background-color: #ffffff;
@@ -61,10 +61,6 @@
   text-transform: uppercase;
 }
 
-.form-product__label:first-of-type {
-  margin-top: 28px;
-}
-
 .form-product__input {
   width: 100%;
   resize: none;
@@ -74,10 +70,11 @@
   border: none;
   border-radius: 6px;
   background-color: #f2f4ff;
+  vertical-align: top;
 }
 
 .form-product__input:last-child {
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 
 .form-product__btn {
@@ -94,18 +91,12 @@
 }
 
 .div {
-  display: inline-block;
   width: 100%;
   margin-bottom: 12px;
 }
 
 .form-product__discount {
-  padding: 0;
-  line-height: 40px;
-  border: none;
-  border-radius: 6px;
-  background-color: #f2f4ff;
-  vertical-align: top;
+  max-width: 470px;
 }
 
 .form-product__checkbox {
