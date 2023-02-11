@@ -15,7 +15,6 @@
   <body>
     <div class="modal">
       <button class="modal__close" type="button">Закрыть</button>
-      <div class="container">
         <form class="form-product" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <h2 class="form-product__title">Добавить товар</h2>
           <fieldset class="form-product__box">
@@ -29,13 +28,13 @@
             <input class="form-product__input" type="text" name="units" id="units" required>
             
             <label class="form-product__label" for="discount">Дисконт </label>
-            <div class="container__discount">
+            <div class="div">
               <input class="form-product__checkbox" type="checkbox" aria-label="Добавить скидку">
-              <input class="form-product__input form-product__discount " type="text" name="discount" id="discount" disabled>
+              <input class="form-product__discount" type="text" name="discount" id="discount">
             </div>
 
             <label class="form-product__label" for="description">Описание </label>
-            <textarea class="form-product__description" name="description" id="description" cols="30" rows="5" required></textarea>
+            <textarea class="form-product__input" name="description" id="description" cols="30" rows="5" required></textarea>
 
             <label class="form-product__label" for="count">Количество </label>
             <input class="form-product__input" type="number" name="count" id="count" required>
@@ -47,7 +46,6 @@
           <button class="form-product__btn" type="submit" formtarget="_blank">Добавить товар</button>
 
         </form>
-      </div>
     </div>
   </body>
 </html>
