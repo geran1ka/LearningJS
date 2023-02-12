@@ -62,6 +62,7 @@
 }
 
 .form-product__input {
+  display: inline-block;
   width: 100%;
   resize: none;
   margin-bottom: 12px;
@@ -90,20 +91,16 @@
   left: auto;
 }
 
-.div {
-  width: 100%;
+.group-container {
+  display: flex;
+  gap: 10px;
   margin-bottom: 12px;
-}
-
-.form-product__discount {
-  max-width: 470px;
 }
 
 .form-product__checkbox {
   position: relative;
-  width: 40px;
+  width: 44px;
   height: 40px;
-  margin-right: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
