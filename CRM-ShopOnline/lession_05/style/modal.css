@@ -71,7 +71,6 @@
   border: none;
   border-radius: 6px;
   background-color: #f2f4ff;
-  vertical-align: top;
 }
 
 .form-product__input:last-child {
@@ -104,8 +103,6 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
-
 }
 
 .form-product__checkbox:before {
