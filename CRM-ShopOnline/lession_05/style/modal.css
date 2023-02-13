@@ -1,40 +1,33 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  padding-top: 30px;
+}
+
 .modal {
+  position: relative;
   max-width: 792px;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 32px 106px 28px;
   background-color: #f2f0f9;
 }
 
 .modal__close {
-  display: block;
-  position: relative;
-  margin-left: auto;
-  font-size: 0;
-  line-height: 0;
-}
-
-.modal__close::after {
-  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
   top: 20px;
   right: 30px;
   background-image: url("../img/btn-close.svg");
+  background-color: transparent;
   background-size: contain;
   color: #6e6893;
-}
-
-.form-product {
-  display: flow-root;
-  max-width: 580px;
-  margin: 0 auto;
-  margin-bottom: 99px;
+  border: none;
 }
 
 .form-product__title {
   margin-bottom: 43px;
-  padding-top: 32px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -44,7 +37,7 @@
 
 .form-product__box {
   margin-bottom: 32px;
-  padding: 28px 28px;
+  padding: 28px;
   border: none;
   border-radius: 8px;
   background-color: #ffffff;
@@ -53,7 +46,7 @@
 .form-product__label {
   display: block;
   margin-bottom: 5px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
@@ -63,11 +56,12 @@
 
 .form-product__input {
   display: inline-block;
+  margin-bottom: 12px;
+  padding: 11px;
   width: 100%;
   resize: none;
-  margin-bottom: 12px;
-  padding: 0;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 1.125;
   border: none;
   border-radius: 6px;
   background-color: #f2f4ff;
@@ -78,28 +72,26 @@
 }
 
 .form-product__btn {
-  margin: 0 28px 28px;
-  float: right;
-  width: 200px;
+  display: block;
+  margin: 0 28px 0 auto;
+  padding: 10px 25px;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 1.21;
   color: #ffffff;
+  text-transform: uppercase;
   background-color: #6D5BD0;
   border-radius: 6px;
   border: 0;
-  left: auto;
 }
 
 .group-container {
-  display: flex;
-  gap: 10px;
+  position: relative;
   margin-bottom: 12px;
+  padding-left: 50px;
 }
 
 .form-product__checkbox {
-  position: relative;
-  width: 44px;
-  height: 40px;
+  display: inline;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -131,7 +123,7 @@
   transform: rotate(-45deg);
 }
 
-.checkbox:checked:after {
+.form-product__checkbox:checked:after {
   opacity: 1
 }
 
